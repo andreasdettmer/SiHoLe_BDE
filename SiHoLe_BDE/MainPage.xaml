@@ -8,6 +8,23 @@
     mc:Ignorable="d">
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Pivot x:Name="rootPivot" Title="Pivot Title">
+            <PivotItem Header="BDE Values">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 1."/>
+            </PivotItem>
+            <PivotItem Header="BDE Chart">
+                <!--Pivot content goes here-->
+                <ListView >
+                    <ListViewItem Content="ListViewItem"/>
+                </ListView>
+                <!--<TextBlock Text="Content of pivot item 2."/>-->
+            </PivotItem>
+            <PivotItem Header="Config">
+                <!--Pivot content goes here-->
+                <TextBlock Text="Content of pivot item 3."/>
+            </PivotItem>
+        </Pivot>
 
     </Grid>
 </Page>
